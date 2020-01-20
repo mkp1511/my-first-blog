@@ -1,5 +1,18 @@
 """
 
+Subsequent steps:
+(1) git status
+(2) git add --all     OR     git add -A
+(3) git status
+(4) git commit -m "comment"
+(5) git push
+
+
+
+
+
+First time steps:
+
 (1)
 (girls) MK:djangogirls purohit$ git
 usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]

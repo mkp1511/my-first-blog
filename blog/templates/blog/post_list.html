@@ -9,17 +9,16 @@
 
     <body>
         <div><h1><a href="/">Dango Girls Blog</a></h1></div>
-        <div>
-            <p>Published: 20.01.2020 10:45 AM</p>
-            <h2><a href="">My First Post</a></h2>
-            <p>It is good to learn Django</p>
-        </div>
+        
+        {% for post in posts %}
         
         <div>
-            <p>Published: 20.01.2020 11:00 AM</p>
-            <h2><a href="">My Second Post</a></h2>
-            <p>Django is a python based web framework</p>
+            <p>Published: {{ post.published_date }}  </p>
+            <h2><a href=""> {{ post.title }} </a></h2>
+            <p>{{ post.text|linebreaksbr }}</p>
         </div>
+        
+        {% endfor %}
 
     </body>
 
